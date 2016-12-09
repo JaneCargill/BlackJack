@@ -22,10 +22,7 @@ public class CardTest {
     assertEquals(SuitType.HEARTS, card.getSuit());
   }
 
-  // @Test
-  // public void canGetValue() {
-  //   assertEquals(SuitType.HEARTS + NumberType.ACE, card.getValue());
-  // }
+ 
 
 
 

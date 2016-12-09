@@ -19,4 +19,10 @@ public void createDeck() {
   assertEquals(52, deck.cardCount());
 }
 
+@Test
+public void canRemoveCardFromDeck() {
+  deck.createDeck();
+ assertEquals("ACE of HEARTS", deck.removeCardFromDeck().toString());
+}
+
 }

@@ -27,6 +27,10 @@ public void shuffle() {
   Collections.shuffle(cards);
 }
 
+public Card removeCardFromDeck() {
+ return cards.remove(0); 
+}
+
 }
 
 
