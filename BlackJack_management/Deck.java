@@ -2,36 +2,39 @@ package BlackJack_management;
 import java.util.*;
 
 public class Deck {
-  private ArrayList<Card> deck;
+  private ArrayList<Card> cards;
 
   public Deck(){
-    this.deck = new ArrayList<Card>();
+    this.cards = new ArrayList<Card>();
+  }
+
+  public ArrayList<Card> getDeck() {
+    return this.cards;
   }
 
   public int cardCount() {
-    return deck.size();
+    return cards.size();
   }
 
-  public void createDeck(){
+  public void createDeck() {
   for (SuitType suit : SuitType.values()){
     for (NumberType number : NumberType.values()){
-      deck.add(new Card(number, suit));
+      cards.add(new Card(number, suit));
     }
   }
 }
+public void shuffle() {
+  Collections.shuffle(cards);
 }
 
-  }
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
 
