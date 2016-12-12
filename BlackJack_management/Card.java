@@ -22,5 +22,31 @@ public class Card {
     return this.number + " of " + this.suit;
   }
 
+  public int cardValue() {
+
+      int count = number.ordinal();
+        if (number.ordinal() < 10) {
+          count++;
+        } else {
+          count = 10;
+        }   
+    return count;
+}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

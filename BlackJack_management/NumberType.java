@@ -15,3 +15,7 @@ public enum NumberType {
   QUEEN,
   KING
 }
+
+// int cardVal = [2];
+// NumberType enumVal = NumberType.values()[cardVal];
+// int forCardVal = enumVal.ordinal();

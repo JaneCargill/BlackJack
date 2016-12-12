@@ -6,10 +6,12 @@ import BlackJack_management.*;
 public class CardTest {
 
   Card card;
+  Card card2;
 
   @Before
   public void before() {
     card = new Card(NumberType.ACE, SuitType.HEARTS);
+    card2 = new Card(NumberType.QUEEN, SuitType.HEARTS);
   }
 
   @Test
@@ -22,7 +24,12 @@ public class CardTest {
     assertEquals(SuitType.HEARTS, card.getSuit());
   }
 
- 
+  @Test
+  public void canGetCardValue() {
+    assertEquals(10, card2.cardValue());
+  }
+
+
 
 
 
